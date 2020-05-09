@@ -1,0 +1,17 @@
+spring:
+#  liquibase:
+#    url: jdbc:h2:mem:myDb;DB_CLOSE_DELAY=500000
+#    user: sa
+#    change-log: classpath:/db/changelog/db.changelog-master.xml
+#  r2dbc:
+#    url: r2dbc:h2:mem:///myDb;DB_CLOSE_DELAY=500000
+#    username: sa
+  liquibase:
+    url: jdbc:postgresql://localhost:5432/testdb
+    user: test
+    password: password123
+    change-log: classpath:/db/changelog/db.changelog-master.xml
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/testdb
+    username: test
+    password: password123
